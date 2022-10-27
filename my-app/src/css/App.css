@@ -1,0 +1,70 @@
+.App {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.Header {
+    display: flex;
+}
+
+.Navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #67159C;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.Icon {
+    margin: 0 1rem 0 1rem;
+    font-size: 1.3rem;
+}
+
+.FirstIcon {
+    margin-left: 3rem;
+    font-size: 1.5rem;
+}
+
+.LastIcon {
+    margin-right: 2.8rem;
+}
+
+h1 {
+    margin: .7rem;
+}
+
+.HomePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.BannerDiv {
+    margin-top: 10rem;
+    width: 40vw;
+}
+
+.GhibliLogo {
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0.9;
+}
+
+.InputContainer {
+    margin-top: 5rem;
+}
+
+.SearchInput {
+    appearance: none;
+    color: white;
+    border-radius: .5rem;
+    padding: 0.7rem 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 0.7em;
+    max-width: 60vw;
+    min-width: 30vw;
+}
