@@ -1,5 +1,9 @@
 /* eslint-disable react/void-dom-elements-no-children */
 import React from 'react';
+import { PropTypes } from 'prop-types';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 function MovieCard({
     filmKey,
@@ -13,7 +17,7 @@ function MovieCard({
     };
 
     return (
-        <link to={`/FilmDetails/${filmKey}`} key={filmKey}>
+        <Link to={`/FilmDetails/${filmKey}`} key={filmKey}>
             <div className='MovieCard' key={filmKey} style={imageStyle}>
                 <FontAwesomeIcon icon={faCircleArrowRight} className="CircleArrow" />
                 <div className='FilmDescription'>
@@ -21,7 +25,7 @@ function MovieCard({
                     <p>{release}</p>
                 </div>
             </div>
-        </link>
+        </Link>
     );
 }
 
