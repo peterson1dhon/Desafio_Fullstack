@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useSelector } from 'r eact-redux';
+import { useSelector } from 'react-redux';
 import MovieCard from './MovieCard';
 import Banner from '../assets/ghibliFlix.png';
 
@@ -12,7 +12,7 @@ function HomePage () {
         .include(searchText.toLocaleLowerCase())));
   return (
     <div className='HomePage'>
-        <div BannerDiv>
+        <div className='BannerDiv'>
             <img src={Banner} alt="logo GHIBLIFLIX" />
         </div>
         <div className='InputContainer'>
@@ -21,12 +21,17 @@ function HomePage () {
         <div className='MoviesContainer'>
             {
                 filteredMovies.map((movie) => (
-                    
+                    <MovieCard
+                        key={movie.movieKey}
+                        movieKey={movie.movieKey}
+                        title={movie.title}
+                        image={movie.image}
+                    />
                 ))
             }
         </div>
     </div>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;
