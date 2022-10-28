@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
-import { userParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { getMovieApi } from '../Api/Logic';
  
 function MovieDetails() {
-    const { id } = userParams();
+    const { id } = useParams();
     const dispatch = useDispatch();
     const movies = useSelector((state) => state.logic);
     useEffect(() => {
