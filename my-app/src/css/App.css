@@ -67,4 +67,87 @@ h1 {
     letter-spacing: 0.7em;
     max-width: 60vw;
     min-width: 30vw;
+    background-image: linear-gradient(to right, #3A1C71 0%, #D76D77 51%, #3A1C71 100%);
+    transition: 0.5s;
+    background-size: 200%auto;
+    color: white;
+    border: none;
+    display: block;
+}   
+
+.SearchInput:hover {
+    background-position: right center;
+    color: white;
+    text-decoration: none;
+}
+
+.SearchInput:focus {
+    outline: none;
+}
+
+::placeholder {
+    font-weight: bold;
+    color: white;
+}
+
+.MoviesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.MovieCard {
+    width: 15rem;
+    height: 25rem;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: 0.7s;
+    transform: cubic-bezier(0.155, 1.105, 0.295, 1.12);
+    -webkit-transform: cubic-bezier(0.155, 1.105, 0.295, 1.12);
+    box-shadow: 0.7s;
+    border-radius: 1rem;
+}
+
+.MovieCard:hover {
+    transition-timing-function: ease-in-out;
+    -moz-box-shadow: 13px 13px 0 0 #3A1C71;
+    -webkit-box-shadow: 13px 13px 0 0 #3A1C71;
+    box-shadow: 13px 13px 0 0 #3A1C71;
+    transform: scale(1.03);
+}
+
+.CircleArrow {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.753);
+}
+
+.MovieDEscription {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(0, 0, 0, .5);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.DetailPage {
+    background: #212124;
+    color: rgba(255, 255, 255, .753);
+}
+
+.DetailCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8rem 0 5rem 0;
+}
+
+.MovieBanner {
+    width: 50vw;
 }
