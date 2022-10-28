@@ -1,9 +1,19 @@
+import { Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import './css/App.css';
+import 'font-awesome/css/font-awesome.min.css';
+import HomePage from './components/HomePage';
+import MovieDetails from './components/MovieDetails';
 
 function App() {
 
   return (
     <div className="App">
-      <h1>hello word</h1>
+      <Header />
+      <Routes>
+        <Route path="/ghibli-films-dark/" element={<HomePage />} />
+        <Route path="/MovieDetails/:id" element={<MovieDetails />} />
+      </Routes>
     </div>
   );
 }
