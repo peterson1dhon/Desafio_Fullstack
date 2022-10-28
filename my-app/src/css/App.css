@@ -151,3 +151,93 @@ h1 {
 .MovieBanner {
     width: 50vw;
 }
+
+.MovieImage {
+    max-width: 100%;
+    transition:
+    0.7s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    box-shadow 0.7s;
+    margin-bottom: 1.3rem;
+    border-radius: 1rem;
+}
+
+.MovieImage:hover {
+    transition-timing-function: ease-in-out;
+    -moz-box-shadow: 20px 20px 0 0 #3a2d5c;
+    --webkit-box-shadow: 20px 20px 0 0 #3a2d5c;
+    transform: scale(1.03);
+}
+
+.InfoContainer {
+    border-radius: 2rem;
+}
+
+.InfoContainer div {
+    background: #3a2d5c;
+    font-weight: bold;
+}
+
+.MovieInfo {
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.MovieInfo:first-child {
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.MovieInfo:last-child {
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.MovieInfo:hover {
+    background: rgba(0, 0, 0, .4);
+}
+
+.MovieInfo p {
+    margin: .3rem 1rem .3rem 1rem;
+    font-size: 1.2rem;
+}
+
+.Synopsis {
+    width: 50vw;
+    text-align: justify;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+@media (max-width: 700px) {
+    h2 {
+        font-size: 1rem;
+    }
+
+    .Icon {
+        margin: .7rem;
+        font-size: 1rem;
+    }
+
+    .BannerDiv {
+        margin-top: 7rem;
+        width: 60vw;
+    }
+
+    .MovieCard {
+        position: relative;
+    }
+
+    .MovieBanner {
+        width: 80vw;
+    }
+
+    .MovieInfo {
+        width: 80vw;
+    }
+
+    .Synopsis {
+        width: 80vw;
+    }
+}
