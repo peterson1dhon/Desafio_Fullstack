@@ -16,16 +16,16 @@ function HomePage () {
             <img src={Banner} alt="logo GHIBLIFLIX" />
         </div>
         <div className='InputContainer'>
-            <input value={searchText} onChange={(e) => setSearchText(e.target.value)} type='text' placeholder='Procure por filmes' className='SearchInput'/>
+            <input value={searchText} onChange={(e) => setSearchText(e.target.value)} type="text" placeholder='Procure por filmes' className='SearchInput'/>
         </div>
         <div className='MoviesContainer'>
             {
-                filteredMovies.map((movie) => (
+                filteredMovies.map((film) => (
                     <MovieCard
-                        key={movie.movieKey}
-                        movieKey={movie.movieKey}
-                        title={movie.title}
-                        image={movie.image}
+                        key={film.movieKey}
+                        movieKey={film.movieKey}
+                        title={film.title}
+                        image={film.image}
                     />
                 ))
             }

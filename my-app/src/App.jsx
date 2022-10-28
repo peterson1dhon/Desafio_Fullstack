@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/ghibli-films-dark/" element={<HomePage />} />
+        <Route path="" element={<HomePage />} />
         <Route path="/MovieDetails/:id" element={<MovieDetails />} />
       </Routes>
     </div>
