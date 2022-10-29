@@ -2,7 +2,7 @@ const GET_FILMS = 'GET_FILMS';
 
 const MOVIES_URL = 'https://ghibliapi.herokuapp.com/films';
 
-const initialState = {};
+const initialState = [];
 
 export const getMovieAction = (payload) => ({
    type: GET_FILMS,
