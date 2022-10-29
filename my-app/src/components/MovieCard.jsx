@@ -18,7 +18,7 @@ function MovieCard({
     };
 
     return (
-        <Link to={`/FilmDetails/${filmKey}`} key={filmKey}>
+        <Link to={`/MovieDetails/${filmKey}`} key={filmKey}>
             <div className='MovieCard' key={filmKey} style={imageStyle}>
                 <FontAwesomeIcon icon={faCircleArrowRight} className="CircleArrow" />
                 <div className='FilmDescription'>

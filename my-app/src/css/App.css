@@ -3,6 +3,10 @@
     color: whitesmoke;
 }
 
+.App h3 {
+    background: #3A1C71;
+}
+
 .Header {
     display: flex;
 }
