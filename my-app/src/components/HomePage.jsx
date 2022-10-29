@@ -24,7 +24,7 @@ function HomePage () {
                     <MovieCard
                         key={film.movieKey}
                         movieKey={film.movieKey}
-                        title={movies.title}
+                        title={film.title}
                         image={film.image}
                     />
                 ))
