@@ -42,9 +42,10 @@ h1 {
     align-items: center;
 }
 
-.BannerDiv {
+.BannerDiv img {
     margin-top: 10rem;
     width: 40vw;
+    border-radius: 8px;
 }
 
 .GhibliLogo {
