@@ -9,7 +9,7 @@ function HomePage () {
     const filteredMovies = movies.filter((item) => Object.keys(item).some((key) => item[key]
         .toString()
         .toLowerCase()
-        .include(searchText.toLocaleLowerCase())));
+        .includes(searchText.toLocaleLowerCase())));
   return (
     <div className='HomePage'>
         <div className='BannerDiv'>
