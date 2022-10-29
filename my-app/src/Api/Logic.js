@@ -29,6 +29,7 @@ export const getMovieApi = () => async (dispatch) => {
             movieKey: e.id,
             title: e.title,
             banner: e.movie_banner,
+            image: e.image,
             description: e.description,
             director: e.director,
             producer: e.producer,
