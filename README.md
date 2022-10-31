@@ -9,9 +9,9 @@
 - Jest
 - [A API do Studio Ghibli ](https://ghibliapi.herokuapp.com/films#)
 
-## Live Demo 🚀
+## Demonstração 🚀
 
-[Live Demo Link](https://ghibliflix-d82e4.web.app/)
+[site ao Vivo](https://ghibliflix-d82e4.web.app/)
 
 ## Começando
 
