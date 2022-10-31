@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 function MovieCard({
-    filmKey,
+    id,
     title,
     release,
     image,
@@ -18,10 +18,10 @@ function MovieCard({
     };
 
     return (
-        <Link to={`/MovieDetails/${filmKey}`} key={filmKey}>
-            <div className='MovieCard' key={filmKey} style={imageStyle}>
+        <Link to={`/details/${id}`} >
+            <div className='MovieCard' style={imageStyle}>
                 <FontAwesomeIcon icon={faCircleArrowRight} className="CircleArrow" />
-                <div className='FilmDescription'>
+                <div className='MovieDescription'>
                     <h3>{title}</h3>
                     <p>{release}</p>
                 </div>

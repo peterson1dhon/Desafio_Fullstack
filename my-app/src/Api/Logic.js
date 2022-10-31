@@ -10,7 +10,7 @@ export const getMovieAction = (payload) => ({
 });
 
 // eslint-disable-next-line default-param-last
-const logic = (state = initialState, action) => {
+const logic = (state= initialState, action) => {
     switch (action.type) {
       case GET_FILMS:
         return [...action.payload];

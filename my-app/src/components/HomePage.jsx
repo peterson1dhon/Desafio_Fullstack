@@ -22,10 +22,10 @@ function HomePage () {
             {
                 filteredMovies.map((film) => (
                     <MovieCard
-                        key={film.movieKey}
-                        movieKey={film.movieKey}
-                        title={film.title}
-                        image={film.image}
+                        key={film?.movieKey}
+                        id={film?.movieKey}
+                        title={film?.title}
+                        image={film?.image}
                     />
                 ))
             }

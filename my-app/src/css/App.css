@@ -32,9 +32,14 @@
     font-size: 1.5rem;
 }
 
-.LastIcon {
-    margin-right: 2.8rem;
+.IconContainer{
+    font-size: ;
 }
+
+/* .LastIcon img{
+    margin-right: 2.8rem;
+    font-size: 3rem;
+} */
 
 h1 {
     margin: .7rem;
@@ -47,16 +52,16 @@ h1 {
 }
 
 .BannerDiv img {
-    margin-top: 10rem;
-    width: 40vw;
+    margin-top: 3rem;
+    width: 25vw;
     border-radius: 8px;
 }
 
-.GhibliLogo {
+/* .GhibliLogo {
     max-width: 100%;
     max-height: 100%;
     opacity: 0.9;
-}
+} */
 
 .InputContainer {
     margin-top: 5rem;
