@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/void-dom-elements-no-children */
-import React from 'react';
-import { PropTypes } from 'prop-types';
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { PropTypes } from 'prop-types';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function MovieCard({
     id,
@@ -16,12 +16,14 @@ function MovieCard({
         backgroundImage: `url(${image})`,
         backgroundSize: 'cover',
     };
+    
 
     return (
-        <Link to={`/details/${id}`} >
+        
+        <Link to={`/movie-details/${id}`}>
             <div className='MovieCard' style={imageStyle}>
                 <FontAwesomeIcon icon={faCircleArrowRight} className="CircleArrow" />
-                <div className='MovieDescription'>
+                <div className='FilmDescription'>
                     <h3>{title}</h3>
                     <p>{release}</p>
                 </div>

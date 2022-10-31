@@ -1,9 +1,9 @@
+import 'font-awesome/css/font-awesome.min.css';
 import { Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
-import './css/App.css';
-import 'font-awesome/css/font-awesome.min.css';
 import HomePage from './components/HomePage';
 import MovieDetails from './components/MovieDetails';
+import './css/App.css';
 
 function App() {
 
@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/details/:id" element={<MovieDetails />} />
+        <Route path="/movie-details/:id" element={<MovieDetails />} />
       </Routes>
     </div>
   );

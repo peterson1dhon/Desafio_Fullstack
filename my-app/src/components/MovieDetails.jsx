@@ -1,37 +1,55 @@
-import React, { useEffect } from 'react'
-import { useSelector, useDispatch } from 'react-redux';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { getMovieApi } from '../Api/Logic';
  
 function MovieDetails() {
     const { id } = useParams();
-    const dispatch = useDispatch();
-    const films = useSelector((state) => state.logic);
+    const [movie, setMovie] = React.useState({});
+   
+
+
+    const getMovieDetails = async() => {
+        const url = `https://ghibliapi.herokuapp.com/films/${id}`;
+        await fetch(url).then((response) => response.json()).then((data) => {
+            setMovie(data);
+        });
+    };
+
     useEffect(() => {
-      dispatch(getMovieApi());
-    }, []);
-  
-    const myFilm = films.filter((film) => film.movieKey === id);
-    const currentMovie = myFilm[0];
+       getMovieDetails();
+
+    }, [id]); 
+
+
+
     return (
         <div className='DetailPage'>
             <div className='DetailCard'>
                 <div className='MovieBanner'>
-                    <img src={currentMovie.image} alt={`${currentMovie.name} banner`} className="FilmImage" />
+                    <img src={movie.movie_banner} alt={`${movie.name} banner`} className='MovieImage'/>
                 </div>
                 <div className='InfoContainer'>
 
                     <div className='MovieInfo'>
                         <p>Titulo do Filme:</p>
-                        <p>{currentMovie.title}</p>
+                        <p>{movie.title}</p>
                     </div>
                     <div className='MovieInfo'>
                         <p>Diretor:</p>
-                        <p>{currentMovie.director}</p>
+                        <p>{movie.director}</p>
                     </div>
                     <div className='MovieInfo'>
                         <p>Produtor:</p>
-                        <p>{currentMovie.producer}</p>
+                        <p>{movie.producer}</p>
+                    </div>
+
+                    <div className='MovieInfo'>
+                        <p>Ano de Lançamento:</p>
+                        <p>{movie.release_date}</p>
+                    </div>
+
+                    <div className='MovieInfo'>
+                        <p>Sinopse:</p>
+                        <p>{movie.description}</p>
                     </div>
 
                 </div>
