@@ -25,7 +25,7 @@ Instale o Node e o NPM usando `npm install` em linha de comando.
 clone o repositorio `git clone https://github.com/peterson1dhon/Desafio_Fullstack.git` no seu terminal.
 
 ### Instalar
-Execute `npm install` em linha de comando.
+Execute `npm install` em linha de comando, E rode com NPM start.
 
 ### Author 
 
